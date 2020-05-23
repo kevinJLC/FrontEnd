@@ -55,7 +55,7 @@ addProducto(form){
   if (form.valid) {
     this.admin.agregar(form.value).subscribe(res =>{
       if(res['operacion']){
-        window.location.reload()
+        alert("Actualice la página para ver los cambios")
       }else{
         alert('No se pudo agregar el producto')
       }
